@@ -63,7 +63,9 @@
   <ItemGroup>
     <Compile Include="Assets\_Root\Scripts\GameController.cs" />
     <Compile Include="Assets\_Root\Scripts\FallingObject.cs" />
+    <Compile Include="Assets\_Root\Scripts\DestroyZone.cs" />
     <Compile Include="Assets\_Root\Scripts\PlayerMover.cs" />
+    <Compile Include="Assets\_Root\Scripts\Spawner.cs" />
     <Compile Include="Assets\_Root\Scripts\Game.cs" />
   </ItemGroup>
   <ItemGroup>
