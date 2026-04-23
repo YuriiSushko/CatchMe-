@@ -11,12 +11,21 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
         UpdateScoreUI();
     }
 
     public void AddScore(int amount)
     {
         score += amount;
+
+        if (score < 0)
+        {
+            score = 0;
+            GameOver();
+            return;
+        }
+
         UpdateScoreUI();
     }
 
@@ -26,5 +35,12 @@ public class GameController : MonoBehaviour
         {
             scoreText.text = score.ToString();
         }
+    }
+
+    private void GameOver()
+    {
+        Debug.Log("Game Over");
+
+        Time.timeScale = 0f;
     }
 }

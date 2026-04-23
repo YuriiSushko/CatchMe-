@@ -797,7 +797,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b311156421f2b344aa9925775b42d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
-  fallingObjectPrefab: {fileID: 6280176190646359189, guid: bb44490579bdd9b429d3588d92f3f639, type: 3}
+  spawnObjects:
+  - prefab: {fileID: 6280176190646359189, guid: 1d6abcee2a4f4994b8ef447df7ea40b0, type: 3}
+    weight: 1
+  - prefab: {fileID: 6280176190646359189, guid: d5d786de6a4018d47a63aa36cf7a9558, type: 3}
+    weight: 2
+  - prefab: {fileID: 6280176190646359189, guid: 3a8d98b82724b314f9200211f883ebc7, type: 3}
+    weight: 2
+  - prefab: {fileID: 6280176190646359189, guid: bb44490579bdd9b429d3588d92f3f639, type: 3}
+    weight: 3
+  - prefab: {fileID: 6280176190646359189, guid: 5729f79a17151eb4fb2aecf1cb039b4c, type: 3}
+    weight: 5
+  - prefab: {fileID: 6280176190646359189, guid: 1ed8fb27cfa7b3e48a9289b04eb5233d, type: 3}
+    weight: 8
   spawnInterval: 1
   minX: -2.2
   maxX: 2.2
