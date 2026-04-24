@@ -22,6 +22,15 @@ namespace Assets._Root.Scripts
             GameController.AddScore(fallingObject.ScoreValue);
             playerVisuals.PlayHitEffect();
 
+            if (fallingObject.IsSlowPowerUp)
+            {
+                GameController.ActivateSlow(7f, 0.5f);
+            }
+            else
+            {
+                GameController.AddScore(fallingObject.ScoreValue);
+            }
+
             Destroy(collision.gameObject);
         }
     }

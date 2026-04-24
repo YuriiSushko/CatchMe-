@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2334023185207049145}
   - component: {fileID: 7588760339737834449}
   - component: {fileID: 8046853089533973375}
-  - component: {fileID: 6150702274808411552}
   - component: {fileID: 2257627149293972944}
+  - component: {fileID: 5794981698598064490}
   m_Layer: 0
   m_Name: CasualFallingObject_3
   m_TagString: Untagged
@@ -84,12 +84,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5088245832779408599, guid: a19d9c755d042d04893eda647337b9a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a19d9c755d042d04893eda647337b9a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -130,7 +130,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.4
---- !u!50 &6150702274808411552
+--- !u!114 &2257627149293972944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6280176190646359189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d05746ab4b6aa4419fe3709438cbc88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FallingObject
+  fallSpeed: 4
+  scoreValue: 1
+  isSlowPowerUp: 0
+--- !u!50 &5794981698598064490
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -138,7 +153,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6280176190646359189}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -157,16 +172,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &2257627149293972944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6280176190646359189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d05746ab4b6aa4419fe3709438cbc88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FallingObject
-  scoreValue: 1
